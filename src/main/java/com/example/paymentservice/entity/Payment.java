@@ -24,6 +24,6 @@ public class Payment {
 
     private BigDecimal amount;
     private String currency;
-    private String paymentMethod;
+    private PaymentMethod paymentMethod;
     private PaymentStatus status;
 }
