@@ -15,6 +15,6 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://eureka.example.com:8761/eureka
+      defaultZone: http://localhost:8761/eureka
   instance:
     hostname: payment-service
