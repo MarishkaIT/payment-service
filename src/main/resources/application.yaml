@@ -1,3 +1,20 @@
+payment:
+  gateway:
+    url: https://localhost:8081
+
 spring:
   application:
     name: payment-service
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/db_payment_service
+    username: postgres
+    password: pass
+    driver-class-name: org.postgresql.Driver
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka.example.com:8761/eureka
+  instance:
+    hostname: payment-service
